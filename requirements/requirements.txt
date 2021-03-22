@@ -1,0 +1,10 @@
+pandas==1.1.3
+numpy # ==1.19.2
+python-dotenv==0.15.0
+simfin==0.8.1
+xgboost==1.3.3
+category-encoders==2.2.2
+explainerdashboard==0.3.3
+gunicorn
+
+
