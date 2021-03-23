@@ -32,7 +32,7 @@ if days_since_update > 7:
     explainer = RegressionExplainer(model, X, y)
 
     db = ExplainerDashboard(
-        explainer, title="Stock Valuation Explainer", shap_interaction=False, precision='float32', decision_trees=False)
+        explainer, title="Stock Valuation Explainer", description="Visit https://share.streamlit.io/gardnmi/fundamental-stock-prediction to see the model in use,", shap_interaction=False, precision='float32', decision_trees=False)
 
     db.to_yaml("dashboard.yaml", explainerfile="explainer.joblib",
                dump_explainer=True)
